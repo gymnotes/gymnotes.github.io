@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Gym Notes by gymnotes</title>
+    <title>Gym Notes</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -11,38 +11,69 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+        #slides {
+            display:none;
+            width:322px;
+            height:572px;
+        }
+        #iphone
+        {
+            width: 348px;
+            min-height: 700px;
+            background:url("images/iphone.png") no-repeat;
+            padding: 118px 0px 0px 29px;
+        }
+    </style>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>Gym Notes</h1>
-        <p>Workouts in your pocket</p>
-
-
-        <p class="view"><a href="https://github.com/gymnotes">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h3>
-
-<ul>
-<li>Create your own workout routines</li>
-<li>iOS 7 User Interface</li>
-<li>Timer to see how long you have been training. Avoids resting too much!
-<img height="568" width="320" src="images/screenshot01.png"><img height="568" width="320" src="images/screenshot02.png"><img height="568" width="320" src="images/screenshot03.png"><img height="568" width="320">
-#### Note
-This app is intended for people who already know exercise names and how to do it. This app does not teach you how to do exercises.</li>
-</ul><h3>
-<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h3>
-
-<p>gymnotesapp <em>at</em> gmail.com</p>
-      </section>
+        <header>
+            <h1>Gym Notes</h1>
+            <p>Workouts in your pocket</p>
+          <ul>
+              <li>Create your own workout routines</li>
+              <li>iOS 7 User Interface</li>
+              <li>Timer to see how long you have been training and avoid resting too much!
+              <li>This app is intended for people who already know exercise names and how to do it.</li>
+              <li>This app does not teach you how to do exercises.</li>
+          </ul>
+ 
+    
+        </header>
+        <section>
+        <div id="iphone">
+         <div id="slides">
+              <img src="images/screenshot01.png">
+              <img src="images/screenshot02.png">
+              <img src="images/screenshot03.png">
+              <img src="images/screenshot04.png">
+          </div>
+      </div>
+    </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Need help?
+        <a href="mailto:gymnotesapp@gmail.com">gymnotesapp@gmail.com</a>
+        </p>
+        <p><small>Created by Helton Kishi.</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--<script src="javascripts/scale.fix.js"></script>-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="javascripts/jquery.slides.min.js"></script>
+    <script>
+     $('#slides').slidesjs({
+        width: 242,
+        height: 440,
+        navigation: false,
+        play: {
+          active: false,
+          auto: true,
+          interval: 4000,
+          pauseOnHover: true
+        }
+      });
+    </script>
     
   </body>
 </html>
